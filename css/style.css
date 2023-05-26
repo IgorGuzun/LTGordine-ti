@@ -89,7 +89,7 @@ p {
 }
 
 section {
-    padding: 60px 15% 10px 15%;
+    padding: 40px 15% 10px 15%;
 }
 
 a {
@@ -97,11 +97,12 @@ a {
 }
 
 #intro {
-    min-height: 100vh;
+    min-height: max(100vh, 800px);
+    position: relative;
+
     background: linear-gradient(#4141414d, #41414163), url('../images/index.jpg');
     background-size: cover;
     background-position: 0% 50%;
-
 }
 
 .intro-content {
@@ -142,7 +143,7 @@ display: inline-block;
     background-color: #0a479770;
 }
 
-.custom-shape-divider-bottom-1680281726 {
+.custom-shape-divider-bottom-1685021608 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -151,14 +152,15 @@ display: inline-block;
     line-height: 0;
 }
 
-.custom-shape-divider-bottom-1680281726 svg {
+.custom-shape-divider-bottom-1685021608 svg {
     position: relative;
     display: block;
-    width: calc(133% + 1.3px);
-    height: 119px;
+    width: calc(100% + 1.3px);
+    height: 34px;
+    transform: rotateY(180deg);
 }
 
-.custom-shape-divider-bottom-1680281726 .shape-fill {
+.custom-shape-divider-bottom-1685021608 .shape-fill {
     fill: #FFFFFF;
 }
 
@@ -168,14 +170,14 @@ display: inline-block;
 }
 
 .p-despre {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.935);
     box-shadow: rgba(100, 100, 46, 0.15) 0px 48px 100px 0px;
 pad: 15px;
 border-radius: 5px;
 }
 
 .slideshow {
-    height: 60vh;
+    height: 70vh;
    
     border-radius: 8px;
     box-shadow: rgba(100, 100 111, 0.2) 0px 7px 20px 0px ;
@@ -198,7 +200,7 @@ border-radius: 5px;
     color: var(--primary);
     border-radius: 5px;
 
-    background: radial-gradient(#000000ad, #00000074);
+    background: radial-gradient(#0000006c, #0000009f);
     height: inherit;
 
     display: flex;
@@ -218,9 +220,8 @@ border-radius: 5px;
 
 #despre > i, #galerie > i {
 position: absolute;
-font-size: 2rem;
+font-size: 3rem;
 z-index: -2;
-
 }
 
 #despre {
@@ -290,7 +291,6 @@ animation: anim1 3.8s 1.5s infinite;
 #galerie {
     position: relative;
     min-height: 60vh;
-    top: 10px;
 }
 
 .galerie-container {
